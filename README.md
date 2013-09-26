@@ -1,32 +1,24 @@
-UNOFFICIAL GITHUB BUTTONS
-=========================
+# App.net Buttons
 
-Showcase your GitHub (repo's) success with these three simple, static buttons featuring dynamic watch, fork and follower counts and a link to your GitHub repo or profile page.
+Share the love, show off your followers, and allow people to discover your App.net profile. Buttons that match your other buttons. Sexy.
 
-To get started, checkout http://ghbtns.com!
-
+To get started, checkout http://adnbtns.com!
 
 
-Usage
------
+
+## Usage
 
 These buttons are hosted via GitHub Pages, meaning all you need to do is include an iframe and you're set. Once included, you can configure it with various options. Here's the include:
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=USERNAME&repo=REPONAME&type=BUTTONTYPE"
+<iframe src="http://adnbtns.com/adn-btn.html?user=USERNAME&repo=REPONAME&type=BUTTONTYPE"
   allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
 ```
 
 ### Requirements
 
 `user`<br>
-GitHub username that owns the repo<br>
-
-`repo`<br>
-GitHub repository to pull the forks and watchers counts
-
-`type`<br>
-Type of button to show: `watch`, `fork`, or `follow`
+An App.net username<br>
 
 ### Optional
 
@@ -36,66 +28,47 @@ Show the optional watchers or forks count: *none* by default or `true`
 `size`<br>
 Optional flag for using a larger button: *none* by default or `large`
 
+`align`<br>
+Optional flag for button alignment within iframe: *none* by default or `left` / `right` / `center`
 
 
 Examples
 --------
 
-**Basic Watch button**
+**Basic Follow Button**
+
+<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan"
+  allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=watch"
-  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan"
+  allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 ```
 
-**Basic Fork button**
+**Follow Button with Count**
+
+<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=fork"
-  allowtransparency="true" frameborder="0" scrolling="0" width="53" height="20"></iframe>
+<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true"
+  allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 ```
 
-**Basic Follow button**
+**Large Follow Button with Count**
+
+<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="280" height="20"></iframe>
 
 ``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&type=follow"
-  allowtransparency="true" frameborder="0" scrolling="0" width="132" height="20"></iframe>
+<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="280" height="20"></iframe>
 ```
 
-**Watch with count**
 
-``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=watch&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="110" height="20"></iframe>
-```
+## Limitations
 
-**Fork with count**
-
-``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=fork&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="95" height="20"></iframe>
-```
-
-**Follow with count**
-
-``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&type=follow&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="165" height="20"></iframe>
-```
-
-**Large Watch button with count**
-
-``` html
-<iframe src="http://ghbtns.com/github-btn.html?user=markdotto&repo=github-buttons&type=watch&count=true&size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="170" height="30"></iframe>
-```
-
-Limitations
------------
-
-For the first version, functionality is limited and some concessions were made:
-
-- Width and height must be specificed for all buttons (which actually adds some control for those with OCD like myself).
+- iFrame width and height must be specificed for all buttons.
 - All attributes must be passed through via URL parameters.
 - CSS and javascript are all included in the same HTML file to reduce complexity and requests.
 
@@ -104,42 +77,42 @@ For the first version, functionality is limited and some concessions were made:
 In order to avoid `insecure content` warnings when using GitHub Buttons on a page behind an SSL certificate, simply host a copy of the `github-btn.html` file on your secure directory and substitute your domain in the iframe include: 
 
 ``` html
-<iframe src="https://YOURDOMAIN.com/github-btn.html?user=USERNAME&repo=REPONAME&type=BUTTONTYPE"
-  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+<iframe src="https://YOURDOMAIN.com/adn-btn.html?user=USERNAME"
+  allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
 ```
 
-More refinement and functionalty is planned with open-sourcing--any help is always appreciated!
+
+## Bug tracker
+
+Have a bug? Please create an issue here on GitHub at https://github.com/JohnONolan/adn-buttons/issues.
 
 
 
-Bug tracker
------------
+## Twitter account
 
-Have a bug? Please create an issue here on GitHub at https://github.com/mdo/github-buttons/issues.
-
-
-
-Twitter account
----------------
-
-Keep up to date on announcements and more by following Mark on Twitter, <a href="http://twitter.com/mdo">@mdo</a>.
+Keep up to date on announcements and more by following John on App.net, <a href="http://alpha.app.net/JohnONolan">@JohnONolan</a>.
 
 
 
-Authors
--------
+## Authors
+
+**John O'Nolan**
+
+* http://alpha.app.net/JohnONolan
+* http://github.com/JohnONolan
+
+Forked from the original [Unofficial Github Buttons](http://github.com/mdo/github-buttons) by Mark Otto
 
 **Mark Otto**
 
-+ http://twitter.com/mdo
-+ http://github.com/mdo
+* http://twitter.com/mdo
+* http://github.com/mdo
 
 
 
-Copyright and license
----------------------
+## Copyright and license
 
-Copyright 2011 Mark Otto.
+Copyright 2013 John O'Nolan.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.

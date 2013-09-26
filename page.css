@@ -8,8 +8,6 @@ body {
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eee), color-stop(25%, #fff), to(#fff));
   background-image: -webkit-linear-gradient(#eee, #fff 25%, #fff);
   background-image: -moz-linear-gradient(top, #eee, #fff 25%, #fff);
-  background-image: -ms-linear-gradient(#eee, #fff 25%, #fff);
-  background-image: -o-linear-gradient(#eee, #fff 25%, #fff);
   background-image: linear-gradient(#eee, #fff 25%, #fff);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -51,9 +49,6 @@ h1, h2, h3, h4, h5, h6 {
   background-image: -moz-linear-gradient(top, #599bdc 0%, #3072b3 100%); /* FF3.6+ */
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#599bdc), color-stop(100%,#3072b3)); /* Chrome,Safari4+ */
   background-image: -webkit-linear-gradient(top, #599bdc 0%,#3072b3 100%); /* Chrome 10+,Safari 5.1+ */
-  background-image: -ms-linear-gradient(top, #599bdc 0%,#3072b3 100%); /* IE10+ */
-  background-image: -o-linear-gradient(top, #599bdc 0%,#3072b3 100%); /* Opera 11.10+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#599bdc', endColorstr='#3072b3',GradientType=0 ); /* IE6-9 */
   background-image: linear-gradient(top, #599bdc 0%,#3072b3 100%); /* W3C */
   border: 1px solid #2967a4;
   -webkit-transition: none;
@@ -101,10 +96,6 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 30px;
   font-size: 24px;
 }
-.masthead .tweet-button {
-  width: 55px;
-  margin: 0 auto 20px;
-}
 
 
 /* BODY
@@ -113,12 +104,17 @@ h1, h2, h3, h4, h5, h6 {
 /* Two-column buttons */
 .about-buttons {
   text-align: center;
+  padding-bottom: 20px;
 }
-.about-star,
-.about-fork,
-.about-follow {
-  width: 32%;
+.about-follow iframe {
+  position: relative;
+  top: 5px;
+}
+.about-follow,
+.about-follow-large {
+  width: 48%;
   float: left;
+  margin-bottom: 20px;
 }
 .about-buttons div + div {
   margin-left: 2%;
@@ -165,7 +161,8 @@ iframe + iframe {
 
 /* Small lines after each section */
 .masthead:after,
-.body:after {
+.body:after,
+.about-buttons:after {
   display: block;
   content: '';
   width: 100px;
@@ -188,12 +185,11 @@ iframe + iframe {
     line-height: 24px;
   }
 
-  .about-watch,
-  .about-fork,
-  .about-follow {
+  .about-follow,
+  .about-follow-large {
     width: auto;
-    float: none;
     margin-bottom: 20px;
+    float: none;
   }
   .about-buttons div + div {
     margin-left: 0;
@@ -208,5 +204,8 @@ iframe + iframe {
   .masthead .tagline {
     font-size: 16px;
     line-height: 20px;
+  }
+  .footer iframe {
+    margin-bottom: 10px;
   }
 }
