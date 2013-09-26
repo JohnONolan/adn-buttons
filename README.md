@@ -11,7 +11,7 @@ To get started, checkout http://adnbtns.com!
 These buttons are hosted via GitHub Pages, meaning all you need to do is include an iframe and you're set. Once included, you can configure it with various options. Here's the include:
 
 ``` html
-<iframe src="http://adnbtns.com/adn-btn.html?user=USERNAME&repo=REPONAME&type=BUTTONTYPE"
+<iframe src="http://adnbtns.com/adn-btn.html?user=USERNAME"
   allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
 ```
 
