@@ -31,6 +31,11 @@ Optional flag for using a larger button: *none* by default or `large`
 `align`<br>
 Optional flag for button alignment within iframe: *none* by default or `left` / `right` / `center`
 
+`prefix`<br>
+Optional text prepended to the username as button text. Defaults to `Follow @`
+
+`suffix`<br>
+Optional text appended to the username as button text. Defaults to ``
 
 Examples
 --------
