@@ -35,7 +35,7 @@ Optional flag for button alignment within iframe: *none* by default or `left` / 
 Optional text prepended to the username as button text. Defaults to `Follow @`
 
 `suffix`<br>
-Optional text appended to the username as button text. Defaults to ``
+Optional text appended to the username as button text. Defaults to the empty string.
 
 Examples
 --------
