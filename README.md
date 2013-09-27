@@ -41,7 +41,7 @@ Examples
   allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 
 ``` html
-<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan"
+    <iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan"
   allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 ```
 
@@ -51,18 +51,18 @@ Examples
   allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 
 ``` html
-<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true"
+    <iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 ```
 
 **Large Follow Button with Count**
 
 <iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true&size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="280" height="20"></iframe>
+  allowtransparency="true" frameborder="0" scrolling="0" width="280" height="30"></iframe>
 
 ``` html
-<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true&size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="280" height="20"></iframe>
+   <iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true&size=large"
+  allowtransparency="true" frameborder="0" scrolling="0" width="280" height="30"></iframe>
 ```
 
 
@@ -77,7 +77,7 @@ Examples
 In order to avoid `insecure content` warnings when using GitHub Buttons on a page behind an SSL certificate, simply host a copy of the `github-btn.html` file on your secure directory and substitute your domain in the iframe include: 
 
 ``` html
-<iframe src="https://YOURDOMAIN.com/adn-btn.html?user=USERNAME"
+    <iframe src="https://YOURDOMAIN.com/adn-btn.html?user=USERNAME"
   allowtransparency="true" frameborder="0" scrolling="0" width="100" height="20"></iframe>
 ```
 
