@@ -172,11 +172,13 @@ body {
     for(var i = 0; i < hashes.length; i++) {
       hash = hashes[i].split('=');
       vars.push(hash[0]);
-      vars[hash[0]] = hash[1];
+      vars[hash[0]] = decodeURIComponent(hash[1]);
     }
     return vars;
   }()
   var user = params.user,
+      prefix = params.prefix,
+      suffix = params.suffix,
       count = params.count,
       size = params.size,
       align = params.align,
@@ -186,6 +188,15 @@ body {
       text = document.getElementById('adn-text'),
       counter = document.getElementById('adn-count');
 
+  if (prefix === undefined)
+  {
+    prefix = 'Follow @';
+  }
+
+  if (suffix === undefined)
+  {
+    suffix = '';
+  }
 
   // Add commas to numbers
   function addCommas(n) {
@@ -213,7 +224,7 @@ body {
   }
 
   // Add the class, change the text label, set count link href
-  text.innerHTML = 'Follow @' + user;
+  text.innerHTML = prefix + user + suffix;
   button.href = 'https://alpha.app.net/' + user + '/';
   counter.href = 'https://alpha.app.net/' + user + '/followers';
 
@@ -223,5 +234,5 @@ body {
   }
 
  jsonp('https://alpha-api.app.net/stream/0/users/@' + user);
- 
+
 </script></body></html>
