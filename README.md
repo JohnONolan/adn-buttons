@@ -5,20 +5,21 @@ Share the love, show off your followers, and allow people to discover your App.n
 To get started, checkout http://adnbtns.com!
 
 
-
 ## Usage
 
 These buttons are hosted via GitHub Pages, meaning all you need to do is include an iframe and you're set. Once included, you can configure it with various options. Here's the include:
 
 ``` html
-<iframe src="http://adnbtns.com/adn-btn.html?user=USERNAME"
-  allowtransparency="true" frameborder="0" scrolling="0" width="62" height="20"></iframe>
+    <iframe src="http://adnbtns.com/adn-btn.html?count=true&user=USERNAME"
+  allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 ```
+
 
 ### Requirements
 
 `user`<br>
 An App.net username<br>
+
 
 ### Optional
 
@@ -32,13 +33,9 @@ Optional flag for using a larger button: *none* by default or `large`
 Optional flag for button alignment within iframe: *none* by default or `left` / `right` / `center`
 
 
-Examples
---------
+## Examples
 
 **Basic Follow Button**
-
-<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan"
-  allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 
 ``` html
     <iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan"
@@ -47,18 +44,12 @@ Examples
 
 **Follow Button with Count**
 
-<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true"
-  allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
-
 ``` html
     <iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true"
   allowtransparency="true" frameborder="0" scrolling="0" width="180" height="20"></iframe>
 ```
 
 **Large Follow Button with Count**
-
-<iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true&size=large"
-  allowtransparency="true" frameborder="0" scrolling="0" width="280" height="30"></iframe>
 
 ``` html
    <iframe src="http://adnbtns.com/adn-btn.html?user=JohnONolan&count=true&size=large"
@@ -87,11 +78,9 @@ In order to avoid `insecure content` warnings when using GitHub Buttons on a pag
 Have a bug? Please create an issue here on GitHub at https://github.com/JohnONolan/adn-buttons/issues.
 
 
-
 ## Twitter account
 
 Keep up to date on announcements and more by following John on App.net, <a href="http://alpha.app.net/JohnONolan">@JohnONolan</a>.
-
 
 
 ## Authors
@@ -107,7 +96,6 @@ Forked from the original [Unofficial Github Buttons](http://github.com/mdo/githu
 
 * http://twitter.com/mdo
 * http://github.com/mdo
-
 
 
 ## Copyright and license
