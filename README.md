@@ -4,6 +4,8 @@ Share the love, show off your followers, and allow people to discover your App.n
 
 To get started, checkout http://adnbtns.com!
 
+**NB: As this never really took off, and App.Net pretty much disappeared - I will not be renewing adnbtns.com. These buttons will stop working with that domain, however will still be accessible via http://johnonolan.github.io/adn-buttons**
+
 
 ## Usage
 
