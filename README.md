@@ -2,9 +2,7 @@
 
 Share the love, show off your followers, and allow people to discover your App.net profile. Buttons that match your other buttons. Sexy.
 
-To get started, checkout http://adnbtns.com!
-
-**NB: As this never really took off, and App.Net pretty much disappeared - I will not be renewing adnbtns.com. These buttons will stop working with that domain, however will still be accessible via http://johnonolan.github.io/adn-buttons**
+**NB: Previously these buttons were powered via adnbtns.com - but as this never really took off, and App.Net pretty much disappeared - I have let the domain go. These buttons will stop working with that domain, however will still be accessible via http://johnonolan.github.io/adn-buttons for anyone who wishes to continue to use them.**
 
 
 ## Usage
